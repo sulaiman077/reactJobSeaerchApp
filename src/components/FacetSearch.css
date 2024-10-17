@@ -1,0 +1,68 @@
+/* FacetSearch.css */
+
+/* Container for the entire faceted search */
+.facet-search-container {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: #f9f9f9;
+  max-width: 260px; /* Try a max width instead of a fixed width for responsiveness */
+}
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Grouping filters for better layout */
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+  }
+  
+  /* Optional: Add some basic hover/focus effects */
+  .filter-group select:hover, 
+  .filter-group select:focus {
+    border-color: #007bff;
+  }
+  
+  .filter-group option {
+    padding: 10px;
+  }
+  
+
+/* Agency Label Styling */
+.agency-label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 25px); /* Account for checkbox width */
+  vertical-align: middle;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Checkbox Styling */
+.filter-option input[type="checkbox"] {
+  margin-right: 10px;
+  flex-shrink: 0;
+}

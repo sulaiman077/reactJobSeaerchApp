@@ -1,0 +1,114 @@
+.search-bar-container {
+  background-color: #009688;
+  border-radius: 15px;
+  padding: 30px;
+  width: 92%; /* Occupy most of the page width with 4% margin on each side */
+  margin: 60px auto; /* Center it horizontally */
+  margin-top: 100px; /* Space between the header and the search container */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column; /* Stack search bar and filters vertically */
+  align-items: center;
+}
+
+.search-input {
+  width: 80%; /* Set consistent width for the search bar */
+  max-width: 800px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  margin-bottom: 20px; /* Space between the search input and filters */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+.filter-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 80%; /* Ensure filters have the same width as search input */
+  max-width: 800px;
+  flex-wrap: wrap; /* Ensures the filters wrap if they don't fit horizontally */
+}
+
+.dropdown-control {
+  flex: 1;
+  min-width: 150px; /* Ensure dropdowns have a minimum width */
+  background-color: white;
+}
+
+.clear-button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: white;
+  color: #009688;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #e0f2f1;
+}
+
+.search-bar {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 20px; /* Adjust padding to make space for icon */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 20px; /* Room for the icon */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+}
